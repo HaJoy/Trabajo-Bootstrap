@@ -1,0 +1,52 @@
+body {
+    background-color: #ececec;
+    background-image: url("../assets/images/bonsai-wallpaper-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.box-area {
+    width: 930px;
+}
+
+.left-box {
+    background-image: url("../assets/images/bonsai-login-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.google {
+    width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .box-area {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
