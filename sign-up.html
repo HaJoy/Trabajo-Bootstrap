@@ -3,48 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro - Bonsáis</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Bonsáis - Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/sign-up-style.css">
 </head>
 <body>
-  <header>
-    <etiqueta-html src="nadvar.html"></etiqueta-html>
-  </header>
+    <header class="sticky-sm-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Bonsáis</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-underline">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link fw-bold" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link fw-bold" href="login.html">Iniciar Sesión</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link fw-bold active" href="sign-up.html">Registro</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link fw-bold" href="users.html">Usuarios</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
-  <main class="container mt-5 py-2">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Registro de Usuario</h3>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+    <main class="container d-flex justify-content-center align-items-center min-vh-100">
+      
+      <div class="row border rounded-5 p-3 bg-white shadow box-area justify-content-between">
+        
+        <!-- contenedor de todo -->
+        <div class="row">
+
+          <!-- caja derecha -->
+          <div class="col-md-6 left-box">
+            <form class="row align-items-center">
+
+              <div class="header-text mb-4">
+                <h2>¡Bienvenido!</h2>
+                <p>Nos agrada que seas parte de nosotros</p>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+
+              <div class="input-group mb-3">
+                <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Correo electrónico" required>
               </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+
+              <div class="input-group mb-3">
+                <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Contraseña" required>
               </div>
-              <button type="submit" class="btn btn-primary">Registrarse</button>
+
+              <div class="input-group mb-5">
+                <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirmar contraseña" required>
+              </div>
+              
+              <div class="input-group mb-3">
+                <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Crear cuenta</button>
+              </div>
+
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-light w-100 fs-6"><img src="assets/images/google-logo-login.png" class="me-2 google"><small>Acceder con Google</small></button>
+              </div>
+
+              <div class="row">
+                <small>¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a></small>
+              </div>
+
             </form>
+          </div>
+
+          <!-- caja izquierda -->
+          <div class="col-md-6 rounded-4 right-box">
+          </div>
+
+          
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p class="text-secondary">Correo electrónico: info@bonsai.com</p>
+            <p class="text-secondary">Teléfono: +123 456 789</p>
+            <p class="text-secondary">Dirección: Calle Principal, Ciudad, País</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Acerca del Autor</h5>
+            <p class="text-secondary">Nombre: Yesid Borrero y Cano Hammer</p>
+            <p class="text-secondary">Todos los derechos reservados © 2024 Bonsáis.com</p>
+            <p class="text-secondary">Las imágenes y contenidos utilizados son solo para propósitos ilustrativos.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Redes Sociales</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none text-secondary">Facebook</a></li>
+              <li><a href="#" class="text-decoration-none text-secondary">Twitter</a></li>
+              <li><a href="#" class="text-decoration-none text-secondary">Instagram</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </footer>
 
-  <etiqueta-html src="footer.html"></etiqueta-html>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

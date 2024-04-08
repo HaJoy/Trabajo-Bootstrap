@@ -29,6 +29,10 @@ body {
     width: 20px;
 }
 
+footer p {
+    font-size: .9em;
+}
+
 @media only screen and (max-width: 768px) {
     .box-area {
         margin: 0 10px;

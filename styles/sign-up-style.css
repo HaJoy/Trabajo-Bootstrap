@@ -1,0 +1,56 @@
+body {
+    background-color: #ececec;
+    background-image: url("../assets/images/bonsai-wallpaper-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.box-area {
+    width: 930px;
+}
+
+.right-box {
+    background-image: url("../assets/images/bonsai-signup-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.google {
+    width: 20px;
+}
+
+footer p {
+    font-size: .9em;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    
+    .right-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .left-box {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .box-area {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
