@@ -1,0 +1,16 @@
+body {
+    background-color: #ececec;
+    background-image: url("../assets/images/bonsai-wallpaper-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.tabla {
+    background-color: #50b050;
+    color: #50b050;
+}
+
+footer p {
+    font-size: .9em;
+}
