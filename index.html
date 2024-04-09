@@ -5,30 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bonsáis</title>
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index-style.css">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Bonsáis</a>
+        <a class="navbar-brand fw-bold fs-4" href="index.html">Bonsáis</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-underline">
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold active" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold" href="login.html">Iniciar Sesión</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sign-up.html">Registro</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold" href="sign-up.html">Registro</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="users.html">Usuarios</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold" href="users.html">Usuarios</a>
             </li>
           </ul>
         </div>
@@ -37,22 +37,51 @@
   </header>
 
   <main>
-    <section class="banner text-center py-5">
-      <h1>Bienvenido a nuestra página sobre bonsáis</h1>
-      <p>Descubre el arte milenario de los árboles en miniatura.</p>
-    </section>
+    <div id="carouselExampleAutoplaying" class="carousel slide carrusel mx-auto" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="assets/images/carousel-bonsai-img1.jpg" class="img fluid w-100" alt="...">
+          <div class="carousel-caption d-none d-sm-block">
+            <h1>¡Bienvenido!</h1>
+            <p>Forma parte de nuestra familia de cuidadores de bonsais</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/images/carousel-bonsai-img2.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-sm-block">
+            <h1>¡Conoce!</h1>
+            <p>Aprende a cómo cuidar de tus bonsais fácil y rápido</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/images/carousel-bonsai-img3.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-sm-block">
+            <h1>¡Compra o vende!</h1>
+            <p>Explora el mercado de bonsais que disponemos para ti</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <section class="content ">
       <div class="container py-5">
         <h2 class="text-center mb-4">Que es un bonsai?</h2>
         <div class="article text-center text-justify">
-          <p>Se utiliza el término bonsái para referirnos al arte de cultivar un árbol o arbusto de pequeño tamaño en una maceta, normalmente de cerámica.
-
+          <p>
+            Se utiliza el término bonsái para referirnos al arte de cultivar un árbol o arbusto de pequeño tamaño en una maceta, normalmente de cerámica.
             El significado literal de bonsái es árbol en maceta, por lo que se trata de un arte en el que ninguna parte puede desentenderse de la otra y en el que se combinan elementos artísticos con elementos de la jardinería.
-            
             El objetivo que normalmente se persigue cuando nos iniciamos en el mundo del bonsái es crear una representación realista, pero reducida, de la naturaleza, tratando de que no sea demasiado obvia la intervención de la mano humana en el resultado final.
-            
-            Para que esta técnica de cultivo de árboles sea exitosa deberemos prestar atención a muchos factores. Es este aspecto la que lo hace enormemente atractivo ya que deberemos podar, pinzar, alambrar, regar, abonar (y mucho más) en el momento preciso y de la forma adecuada para lograr tener unas plantas sanas y elegantes</p>
+            Para que esta técnica de cultivo de árboles sea exitosa deberemos prestar atención a muchos factores. Es este aspecto la que lo hace enormemente atractivo ya que deberemos podar, pinzar, alambrar, regar, abonar (y mucho más) en el momento preciso y de la forma adecuada para lograr tener unas plantas sanas y elegantes
+          </p>
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-3">
@@ -88,13 +117,34 @@
     </section>
   </main>
 
-  <etiqueta-html src="footer.html"></etiqueta-html>
+  <footer class="bg-dark text-light">
+    <div class="container">
+      <div class="row py-5 text-center text-md-start">
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p class="text-secondary">Correo electrónico: info@bonsai.com</p>
+          <p class="text-secondary">Teléfono: +123 456 789</p>
+          <p class="text-secondary">Dirección: Calle Principal, Ciudad, País</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Acerca del Autor</h5>
+          <p class="text-secondary">Nombre: Yesid Borrero y Cano Hammer</p>
+          <p class="text-secondary">Todos los derechos reservados © 2024 Bonsáis.com</p>
+          <p class="text-secondary">Las imágenes y contenidos utilizados son solo para propósitos ilustrativos.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-secondary">Facebook</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">Twitter</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- Agrega la referencia al archivo JavaScript de Bootstrap (requiere jQuery) -->
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script> -->
 </body>
 </html>

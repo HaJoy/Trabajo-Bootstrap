@@ -39,8 +39,7 @@ footer p {
     }
     
     .right-box {
-        height: 100px;
-        overflow: hidden;
+        display: none;
     }
 
     .left-box {

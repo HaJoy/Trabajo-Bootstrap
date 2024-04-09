@@ -1,0 +1,17 @@
+.carrusel, .carousel-inner, .carousel-inner img {
+    height: 600px;
+}
+
+.carrusel {
+    max-width: 1265px;
+}
+
+.carousel-inner img {
+    filter: brightness(38%);
+}
+
+@media only screen and (max-width: 756px) {
+    .carrusel, .carousel-inner, .carousel-inner img {
+        height: 300px;
+    }
+}
